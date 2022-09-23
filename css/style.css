@@ -20,6 +20,10 @@ body{
     background-image: url(../assets/img/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
 }
 
 /* Diseño Menú */
@@ -28,6 +32,7 @@ body{
     text-decoration: none;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -41,6 +46,7 @@ a{
     text-decoration: none;
     background-color: rgb(236, 245, 248);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -60,12 +66,14 @@ a{
 /* Título */
 .TituloPpal{
     display: flex;
+    flex-wrap: wrap;
     flex-direction:row-reverse;
     align-items: center;
 }
 
 .titulo{
     display: flex;
+    flex-wrap: wrap;
     flex-direction:row-reverse;
     align-items: center;
     font-family: DynaPuff;
@@ -106,6 +114,7 @@ p{
 
 .Hilados{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -118,6 +127,7 @@ p{
 .parrafoFinal{
     margin-bottom: 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 /* Video */
@@ -165,6 +175,7 @@ p{
 
 .rrss{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -186,8 +197,8 @@ p{
     }
     .contenedorMenu{
         background-color: red;
-        height: 5em;
         width: 100%;
+        height: 5em;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 50% 50%;
@@ -200,9 +211,9 @@ p{
         grid-column: 3; 
         height: 3rem;    
     }
-    /* li{
+    li{
         justify-self: center;  
-    } */
+    }
     .liHome{
         grid-area: Home;
     }
