@@ -217,7 +217,7 @@ a{
     color: coral;
 }
 
-@media(max-width:320px){
+@media (max-width:576px){
     .contenedorMenu{
         height: 5em;
         display: grid;
@@ -378,7 +378,7 @@ a{
 }
 
 /* Diseñadoras */
-.menuDiseñadoras{
+.menuDisenadoras{
     background-color: rgb(236, 245, 248);
     font-family: Poppins;
     text-decoration: none;
@@ -390,7 +390,7 @@ a{
     width: 100%;
 }
 
-.contenedorMenuDiseñadoras{
+.contenedorMenuDisenadoras{
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
@@ -403,12 +403,12 @@ a{
     margin: .5em;    
 }
 
-.ImagenHeaderDiseñadoras{
+.ImagenHeaderDisenadoras{
     width: 100%;
     height: 80%;
 }
 
-.tituloDiseñadoras{
+.tituloDisenadoras{
     margin-top: 5%;
     font-size: 40px;    
     font-family: DynaPuff;
@@ -419,7 +419,7 @@ a{
     height:min-content;
 }
 
-.mainDiseñadoras{
+.mainDisenadoras{
     font-family: Poppins;
     padding: 5%;
 }
@@ -429,22 +429,19 @@ a{
     color: rgb(224, 84, 33);
 }
 
-.parrafosdiseñadoras{
+.parrafosdisenadoras{
     padding: 1%;
 }
 
-.instagramDiseñadoras{
+.instagramDisenadoras{
     margin: 80%;
 }
 
-@media(max-width:320px){
-    li{
-        justify-self: center;
-    }
-    .tituloDiseñadoras{
+@media(max-width:576px){
+    .tituloDisenadoras{
         font-size: 1.4rem;
     }
-    .mainDiseñadoras{
+    .mainDisenadoras{
         font-size: 0.8rem;
     }
 }
