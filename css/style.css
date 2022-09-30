@@ -49,10 +49,10 @@ a{
 
 /* Título */
 .TituloPpal{
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction:row-reverse;
-    align-items: center; */
+    align-items: center;
 }
 
 .titulo{
