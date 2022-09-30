@@ -28,45 +28,19 @@ body{
 }
 
 /* Diseño Menú */
-.menu{
+
+.menubs{
     background-color: rgb(236, 245, 248);
     font-family: Poppins;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    font-size: 1.3em;
 }
+
+
 
 a{
     text-decoration: none;
 }
 
-.contenedorMenu{
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-    width: 100%;
-    height: 4em;
-    margin: .5em;    
-}
-
-.liSub:hover::after{
-    width: 100%;    
-    content: "";
-    display: block;
-    background-color: rgb(107, 107, 245);
-    width: 90%;
-    margin-top: 3px;
-    height: 3px;
-    transition: 0.5s step-start;
-}
 .imagenLogo{
     height: 4em;
 }
@@ -75,10 +49,10 @@ a{
 
 /* Título */
 .TituloPpal{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction:row-reverse;
-    align-items: center;
+    align-items: center; */
 }
 
 .titulo{
@@ -140,9 +114,7 @@ a{
 
 .parrafoFinal{
     margin-bottom: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 10%;
 }
 /* Video */
 
@@ -188,15 +160,11 @@ a{
     font-family: Poppins;
     text-decoration: none;
     list-style-type: none;
+    display: flex;
     bottom: 0;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
     left: 0;
-    bottom: 0;
-    align-self: flex-end;
     margin: 1%;
-
 }
 
 .rrss{
@@ -218,38 +186,6 @@ a{
 }
 
 @media (max-width:576px){
-    .contenedorMenu{
-        height: 5em;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 50% 50%;
-        grid-template-areas:
-            "logo logo logo logo logo"
-            "Home Materiales Puntos Diseñadoras Contacto";
-    }
-    .imagenLogo{
-        grid-area: logo;
-        grid-column: 3; 
-        height: 3rem;    
-    }
-    li{
-        justify-self: center;  
-    }
-    .liHome{
-        grid-area: Home;
-    }
-    .liMateriales{
-        grid-area: Materiales;
-    }
-    .liPuntos{
-        grid-area: Puntos;
-    }
-    .liDiseñadoras{
-        grid-area: Diseñadoras;
-    }
-    .liContacto{
-        grid-area: Contacto;
-    }
     .TituloPpal{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -266,7 +202,16 @@ a{
         grid-area: imagen;
     }
     .finalPagina{
-        padding: 10%;
+        margin: 5%;
+    }
+    .parrafoIndex{
+        font-size: 1.3rem;
+    }
+    .Inicio{
+        margin: 5%;
+    }
+    .lista2{
+        font-size: 1.5rem;
     }
 }
 
@@ -304,18 +249,22 @@ a{
 
 .ListaDeMateriales{
     font-family: Poppins;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 5%;
 }
 
 .fotoMarcadores {
     height: 17em;
+    margin-left: 20%;
 }
-
+.fotoAguja{
+    margin-left: 20%;
+}
+.fotoHilo{
+    margin-left: 20%;
+}
+.fotoOjos{
+    margin-left: 20%;
+}
 .Materiales{
     font-size: 1.5em;
     color: rgb(224, 84, 33);
@@ -378,31 +327,6 @@ a{
 }
 
 /* Diseñadoras */
-.menuDisenadoras{
-    background-color: rgb(236, 245, 248);
-    font-family: Poppins;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contenedorMenuDisenadoras{
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-    width: 100%;
-    height: 4em;
-    margin: .5em;    
-}
-
 .ImagenHeaderDisenadoras{
     width: 100%;
     height: 80%;
