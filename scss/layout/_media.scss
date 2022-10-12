@@ -1,0 +1,49 @@
+@media (max-width:576px){
+    .TituloPpal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "imagen titulo";
+        h1{
+            color: blue($color: #000000);
+            grid-area: titulo;
+            font-size: 3rem; 
+        }
+        img{
+            grid-area: imagen;
+            height: 12rem;
+        }
+    }
+    .Inicio{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    // .finalPagina{
+    //     margin: 5%;
+    // }
+    // .parrafoIndex{
+    //     font-size: 1.3rem;
+    // }
+    // .Inicio{
+    //     margin: 5%;
+    // }
+    // .lista2{
+    //     font-size: 1.5rem;
+    // }
+}
+
+@media (max-width:576px){
+    .header{
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+    // .tituloDisenadoras{
+    //     color: blue;
+    //     font-size: 1rem;
+    // }
+    .mainDisenadoras{
+        font-size: 0.8rem;
+    }
+}

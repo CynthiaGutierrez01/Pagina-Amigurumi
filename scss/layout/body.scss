@@ -1,0 +1,8 @@
+.contenedor{
+    background: $background-principal;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    @include propiedades-grid (1fr,1fr,none,none);
+    overflow-x: hidden;
+}

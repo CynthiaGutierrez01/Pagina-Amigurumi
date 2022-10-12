@@ -1,0 +1,59 @@
+.Inicio{
+    section{
+        font-family: $fuente-textos;
+        @include propiedades-flex (column,space-evenly,center);
+        margin: 10%;
+        h2{
+            color: coral;
+            font-size: 2em;
+            text-align: center;
+        }
+}
+}
+.finalPagina{
+    font-family: $fuente-textos;
+    font-size: 1.5em;
+    p{
+        @include propiedades-flex (row, space-evenly, center);
+    }
+}
+.Hilados{
+    font-family: $fuente-textos;
+    font-size: 1.2rem;
+    @include propiedades-flex (row, space-evenly, center);
+    flex-wrap: wrap;
+    ul{
+        text-decoration:dotted;
+    }
+}
+
+.youTube{
+    font-family: $fuente-textos;
+    margin: 10%;
+    font-size: 1.5em;
+    animation: mover 4s infinite;
+    @include propiedades-flex (column, space-evenly, center);
+    p{
+        font-weight: bold;
+    }
+    a{
+        font-family: $fuente-textos;
+        background-color: rgba(0, 0, 255, 0.264);
+        color: white;
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 10%;
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: rotateZ(10deg)
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}

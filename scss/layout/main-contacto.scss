@@ -1,0 +1,58 @@
+.formulario{
+    background: rgba(255,255,255,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 30%;
+    margin-top: 20%;
+    padding: 10px 35px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    h1{
+        font-family: $fuente-titulos;
+        color: coral;
+        font-size: 2em;
+        text-align: center;
+    }
+    label{
+        display: block;
+        color: coral;
+        font-size: 1em;
+        font-family: $fuente-textos;
+        position: relative;
+    }
+}
+
+
+
+
+.inputFormulario{
+    background: rgba(255,255,255,.8);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 1em;
+    font-family: $fuente-textos;
+}
+.inputmensaje{
+    @extend .inputFormulario;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.boton{
+    width: 100%;
+    font-family: $fuente-textos;
+    outline: none;
+    background: coral;
+    font-size: 1em;
+    border: none;
+    color: aliceblue;
+    padding: 15px 0;
+    cursor:pointer;
+}

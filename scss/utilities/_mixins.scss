@@ -1,0 +1,15 @@
+@mixin propiedades-flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@mixin propiedades-grid ($columns,$row,$justify,$align){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-items: $align;
+}

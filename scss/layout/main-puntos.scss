@@ -1,0 +1,18 @@
+
+.mainPuntos{
+    font-family: $fuente-textos;
+    @include propiedades-flex (column,center,center);
+    flex-wrap: wrap;
+    margin: 5%;
+    
+    h3{
+        font-size: 1.5em;
+        color: rgb(224, 84, 33);
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    img{
+        height: 10rem;
+    }
+}
+

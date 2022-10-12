@@ -1,0 +1,16 @@
+.TituloPpal{
+    @include propiedades-flex (row-reverse,space-evenly,center);
+    flex-wrap: wrap;
+    h1{
+        @include propiedades-flex (row-reverse,space-evenly,center);
+        flex-wrap: wrap;
+        font-family: $fuente-titulos;
+        font-size: 5em;
+        color: rgb(242, 151, 118);
+        margin-right: 10%;
+        &:hover{
+            transform: scale(0.6);
+            transition: 2s;
+        }
+    }
+}

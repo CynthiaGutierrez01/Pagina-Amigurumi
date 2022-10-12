@@ -1,445 +1,328 @@
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
-/* Fuente */
 @font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins-Regular.ttf);
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
 }
 @font-face {
-    font-family:"DynaPuff" ;
-    src: url(../fonts/DynaPuff-Regular.ttf);
+  font-family: "DynaPuff";
+  src: url(../fonts/DynaPuff-Regular.ttf);
+}
+.contenedor {
+  background: lightblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: none;
+  align-items: none;
+  overflow-x: hidden;
 }
 
-/* Diseño Fondo */
-body{
-    background-image: url(../assets/img/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows:1fr;
-    grid-template-columns: 1fr;
-    overflow-x: hidden;
+.TituloPpal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.TituloPpal h1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: DynaPuff;
+  font-size: 5em;
+  color: rgb(242, 151, 118);
+  margin-right: 10%;
+}
+.TituloPpal h1:hover {
+  transform: scale(0.6);
+  transition: 2s;
 }
 
-/* Diseño Menú */
-
-.menubs{
-    background-color: rgb(236, 245, 248);
-    font-family: Poppins;
-    font-size: 1.3em;
+.Inicio section {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10%;
+}
+.Inicio section h2 {
+  color: coral;
+  font-size: 2em;
+  text-align: center;
 }
 
-
-
-a{
-    text-decoration: none;
+.finalPagina {
+  font-family: Poppins;
+  font-size: 1.5em;
+}
+.finalPagina p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.imagenLogo{
-    height: 4em;
+.Hilados {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Hilados ul {
+  text-decoration: dotted;
 }
 
-/* Index */
-
-/* Título */
-.TituloPpal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row-reverse;
-    align-items: center;
+.youTube {
+  font-family: Poppins;
+  margin: 10%;
+  font-size: 1.5em;
+  animation: mover 4s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.titulo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row-reverse;
-    align-items: center;
-    font-family: DynaPuff;
-    font-size: 5em;
-    color: rgb(242, 151, 118);
-    margin-right: 10%;
+.youTube p {
+  font-weight: bold;
 }
-.titulo:hover{
-    transform: scale(0.6);
-    transition: 2s;
-}
-
-.imagenTitulo{
-    margin-right: 10%;
-
-}
-
-/* Section */
-
-.Inicio{
-    font-family: Poppins;
-    margin: 10%;
-}
-
-.h2index{
-    color: coral;
-    font-size: 2em;
-    text-align: center;
-}
-
-.parrafoFinal{
-    margin-top: 4%;
-}
-
-.finalPagina{
-    font-family: Poppins;
-    font-size: 1.5em;
-}
-
-.Hilados{
-    font-family: Poppins;
-    font-size: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.lista2{
-    margin: 10%;
-    text-decoration:dotted;
-
-}
-
-.parrafoFinal{
-    margin-bottom: 5%;
-    margin: 10%;
-}
-/* Video */
-
-.youTube{
-    font-family: DynaPuff;
-    margin: 10%;
-    font-size: 1.5em;
-    animation: mover 4s infinite;
-}
-
-
-.parrafoYouTube{
-    margin: 10%;
-    color: coral;
-    font-weight: bold;
-}
-
-#botonYT{
-    font-family: Poppins;
-    background-color: rgb(240, 71, 71);
-    color: white;
-    text-decoration: none;
-    padding: 4px;
-    border-radius: 10%;
-    margin-left: 30%;
+.youTube a {
+  font-family: Poppins;
+  background-color: rgba(0, 0, 255, 0.264);
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  border-radius: 10%;
 }
 
 @keyframes mover {
-    0% {
-        transform: rotateZ(10deg)
-    }
-    50% {
-        transform: rotateZ(-10deg);
-    }
-    100% {
-        transform: rotateZ(10deg);
-    }
+  0% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+.header {
+  font-family: DynaPuff;
+  font-size: 5em;
+  color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: min-content;
+}
+.header img {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-self: start;
+  overflow: hidden;
+}
+.header h1 {
+  margin-top: 5%;
+  font-size: 40px;
 }
 
-/* Pie de Página */
-
-.pieDePagina{
-    font-family: Poppins;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    margin: 1%;
+.MainMateriales section {
+  font-family: Poppins;
+  margin: 10%;
+  margin-top: 1%;
 }
-
-.rrss{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-    width: 100%;
-    height: 4rem; 
-    margin: 0;
-
+.MainMateriales h3 {
+  font-size: 1.5em;
+  color: rgb(224, 84, 33);
 }
-
-.copyright{
-    font-size: 1em;
-    color: coral;
-}
-
-@media (max-width:576px){
-    .TituloPpal{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "imagen titulo";
-    }
-    .titulo{
-        grid-area: titulo;
-        font-size: 3rem;
-        margin-right: 50%;
-        
-    }
-    .imagenTitulo{
-        grid-area: imagen;
-    }
-    .finalPagina{
-        margin: 5%;
-    }
-    .parrafoIndex{
-        font-size: 1.3rem;
-    }
-    .Inicio{
-        margin: 5%;
-    }
-    .lista2{
-        font-size: 1.5rem;
-    }
-}
-
-/* Materiales */
-
-.imagenMateriales{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-self: start;
-    overflow:hidden;
-
-}
-
-.headermateriales{
-    font-family: DynaPuff;
-    font-size: 4em;
-    color: coral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:min-content;
-}
-
-.MaterialesyHerramientas{
-    margin-top: 5%;
-    font-size: 40px;
-}
-
-.descripcionMateriales{
-    font-family: Poppins;
-    margin: 10%;
-    margin-top: 1%;
-}
-
-.ListaDeMateriales{
-    font-family: Poppins;
-    margin: 5%;
+.MainMateriales img {
+  margin-left: 20%;
 }
 
 .fotoMarcadores {
-    height: 17em;
-    margin-left: 20%;
-}
-.fotoAguja{
-    margin-left: 20%;
-}
-.fotoHilo{
-    margin-left: 20%;
-}
-.fotoOjos{
-    margin-left: 20%;
-}
-.Materiales{
-    font-size: 1.5em;
-    color: rgb(224, 84, 33);
+  height: 17em;
 }
 
-
-/* Puntos */
-
-.headerPuntos{
-    font-size: 2rem;    
-    font-family: DynaPuff;
-    color: coral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:min-content;
+.mainPuntos {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5%;
 }
-.ImagenHeaderPuntos{
-    width: 100%;
+.mainPuntos h3 {
+  font-size: 1.5em;
+  color: rgb(224, 84, 33);
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
-.Puntos{
-    margin-top: 5%;
-}
-
-.mainPuntos{
-    font-family: Poppins;
-    margin: 10%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+.mainPuntos img {
+  height: 10rem;
 }
 
-.h3puntos{
-    font-size: 1.5em;
-    color: rgb(224, 84, 33);
-    padding-bottom: 5%;
-    padding-top: 5%;
-    text-align: center;
+.mainDisenadoras {
+  font-family: Poppins;
+  padding: 5%;
+}
+.mainDisenadoras h2 {
+  font-size: 1.5em;
+  color: rgb(224, 84, 33);
+}
+.mainDisenadoras p {
+  padding: 1%;
+}
+.mainDisenadoras a {
+  margin-left: 80%;
 }
 
-.ImagenesPuntos{
-    padding: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.ImagenContacto {
+  width: 80%;
+  margin-left: 10%;
 }
 
-.puntoEnano{
-    height: 10rem;
-    padding-top: 10%;
+.formulario {
+  background: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 30%;
+  margin-top: 20%;
+  padding: 10px 35px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+.formulario h1 {
+  font-family: DynaPuff;
+  color: coral;
+  font-size: 2em;
+  text-align: center;
+}
+.formulario label {
+  display: block;
+  color: coral;
+  font-size: 1em;
+  font-family: Poppins;
+  position: relative;
 }
 
-.nudoCorredizo{
-    height: 10rem;
+.inputFormulario, .inputmensaje {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ff851b;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 1em;
+  font-family: Poppins;
 }
 
-.medioPunto{
-    height: 10rem;
-    padding-top: 10%;
+.inputmensaje {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
 }
 
-/* Diseñadoras */
-.ImagenHeaderDisenadoras{
-    width: 100%;
-    height: 80%;
+.boton {
+  width: 100%;
+  font-family: Poppins;
+  outline: none;
+  background: coral;
+  font-size: 1em;
+  border: none;
+  color: aliceblue;
+  padding: 15px 0;
+  cursor: pointer;
 }
 
-.tituloDisenadoras{
-    margin-top: 5%;
-    font-size: 40px;    
-    font-family: DynaPuff;
-    color: coral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:min-content;
+.pieDePagina {
+  font-family: Poppins;
+  background-color: rgb(236, 245, 248);
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
 
-.mainDisenadoras{
-    font-family: Poppins;
-    padding: 5%;
+.rrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+  height: 4rem;
+  margin: 0;
 }
 
-.nombres{
-    font-size: 1.5em;
-    color: rgb(224, 84, 33);
+.copyright {
+  font-size: 1em;
+  color: rgb(78, 193, 231);
 }
 
-.parrafosdisenadoras{
-    padding: 1%;
+.menubs {
+  background-color: rgb(236, 245, 248);
+  font-family: Poppins;
+  font-size: 1.3em;
+}
+.menubs a {
+  text-decoration: none;
 }
 
-.instagramDisenadoras{
-    margin-left: 80%;
+.imagenLogo {
+  height: 4em;
 }
 
-@media (max-width:576px){
-    .tituloDisenadoras{
-        font-size: 1.4rem;
-    }
-    .mainDisenadoras{
-        font-size: 0.8rem;
-    }
+@media (max-width: 576px) {
+  .TituloPpal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen titulo";
+  }
+  .TituloPpal h1 {
+    color: 0;
+    grid-area: titulo;
+    font-size: 3rem;
+  }
+  .TituloPpal img {
+    grid-area: imagen;
+    height: 12rem;
+  }
+  .Inicio p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.4rem;
+  }
+  .mainDisenadoras {
+    font-size: 0.8rem;
+  }
 }
 
-/* Contacto */
-
-.ImagenContacto{
-    width: 80%;
-    margin-left: 10%;
-}
-
-.formulario{
-    background: rgba(255,255,255,.6);
-    width: 90%;
-    max-width: 650px;
-    margin: auto;
-    margin-bottom: 30%;
-    margin-top: 20%;
-    padding: 10px 35px;
-    padding-bottom: 30px;
-    border-radius: 5px;
-}
-
-.h1contacto{
-    font-family: DynaPuff;
-    color: coral;
-    font-size: 2em;
-    text-align: center;
-}
-
-.labelformulario{
-    display: block;
-    color: coral;
-    font-size: 1em;
-    font-family: Poppins;
-    position: relative;
-}
-
-.inputformulario{
-    background: rgba(255,255,255,.8);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ff851b;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    font-size: 1em;
-    font-family: Poppins;
-}
-.inputmensaje{
-    background: rgba(255,255,255,.8);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ff851b;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    font-size: 1em;
-    font-family: Poppins;
-    resize: vertical;
-    max-height: 150px;
-    min-height: 50px;
-}
-
-.boton{
-    width: 100%;
-    font-family: Poppins;
-    outline: none;
-    background: coral;
-    font-size: 1em;
-    border: none;
-    color: aliceblue;
-    padding: 15px 0;
-    cursor:pointer;
-}
+/*# sourceMappingURL=style.css.map */

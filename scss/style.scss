@@ -1,0 +1,16 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/typo";
+@import "./layout/body.scss";
+@import "./layout/header-index.scss";
+@import "./layout/main-index.scss";
+@import "./layout/header.scss";
+@import "./layout/main-materiales.scss";
+@import "./layout/main-puntos.scss";
+@import "./layout/main-disenadoras.scss";
+@import "./layout/header-contacto.scss";
+@import "./layout/main-contacto.scss";
+@import "./layout/footer.scss";
+@import "./components/bootstrap";
+@import "./layout/_media";
