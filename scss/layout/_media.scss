@@ -4,10 +4,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "imagen titulo";
+        padding: 5%;
         h1{
             color: blue($color: #000000);
             grid-area: titulo;
-            font-size: 3rem; 
+            font-size: 2rem; 
         }
         img{
             grid-area: imagen;
@@ -15,35 +16,49 @@
         }
     }
     .Inicio{
-        p{
-            font-size: 1.3rem;
+        section{
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        div{
+            margin: 10%;
+            p{
+                font-size: 1rem;
+            }
+        }
+        article{
+            font-size: 1rem;
         }
     }
-    // .finalPagina{
-    //     margin: 5%;
-    // }
-    // .parrafoIndex{
-    //     font-size: 1.3rem;
-    // }
-    // .Inicio{
-    //     margin: 5%;
-    // }
-    // .lista2{
-    //     font-size: 1.5rem;
-    // }
-}
-
-@media (max-width:576px){
+    .Hilados{
+        ul{
+            font-size: 1rem;
+        }
+        img{
+            height: 10rem;
+        }
+    }
     .header{
         h1{
             font-size: 1.4rem;
         }
     }
-    // .tituloDisenadoras{
-    //     color: blue;
-    //     font-size: 1rem;
-    // }
+    .MainMateriales{
+        @include propiedades-flex (column,space-evenly,center);
+        section{
+            div{
+                img{
+                    height: 8rem;
+                    margin: 10%;
+                }
+            }
+        }
+    }
     .mainDisenadoras{
         font-size: 0.8rem;
     }
+
+
+
 }

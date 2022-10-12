@@ -302,23 +302,49 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "imagen titulo";
+    padding: 5%;
   }
   .TituloPpal h1 {
     color: 0;
     grid-area: titulo;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .TituloPpal img {
     grid-area: imagen;
     height: 12rem;
   }
-  .Inicio p {
-    font-size: 1.3rem;
+  .Inicio section h2 {
+    font-size: 1.5rem;
+  }
+  .Inicio div {
+    margin: 10%;
+  }
+  .Inicio div p {
+    font-size: 1rem;
+  }
+  .Inicio article {
+    font-size: 1rem;
+  }
+  .Hilados ul {
+    font-size: 1rem;
+  }
+  .Hilados img {
+    height: 10rem;
   }
 }
 @media (max-width: 576px) {
   .header h1 {
     font-size: 1.4rem;
+  }
+  .MainMateriales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .MainMateriales section div img {
+    height: 8rem;
+    margin: 10%;
   }
   .mainDisenadoras {
     font-size: 0.8rem;
