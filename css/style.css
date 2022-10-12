@@ -281,7 +281,7 @@
 
 .copyright {
   font-size: 1em;
-  color: rgb(78, 193, 231);
+  color: coral;
 }
 
 .menubs {
@@ -331,8 +331,6 @@
   .Hilados img {
     height: 10rem;
   }
-}
-@media (max-width: 576px) {
   .header h1 {
     font-size: 1.4rem;
   }
